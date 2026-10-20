@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#2D2214" />
+      <stop offset="60%" stop-color="#19130A" />
+      <stop offset="100%" stop-color="#0F0B06" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5ECCE" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#9E7422" />
+      <stop offset="100%" stop-color="#694C10" />
+    </linearGradient>
+    <linearGradient id="parchmentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6" />
+      <stop offset="50%" stop-color="#F4EADB" />
+      <stop offset="100%" stop-color="#E7D8C0" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+  
+  <!-- Outer Filigree Border -->
+  <rect x="28" y="28" width="456" height="456" rx="88" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.6" />
+  <rect x="42" y="42" width="428" height="428" rx="76" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4" />
+
+  <!-- Center Decorative Seal / Torah Scroll -->
+  <g transform="translate(256, 235)">
+    <!-- Aura halo -->
+    <circle r="145" fill="#D4AF37" opacity="0.08" />
+    
+    <!-- Left Scroll Roller (Etz Chaim) -->
+    <rect x="-140" y="-120" width="16" height="240" rx="4" fill="url(#goldGrad)" />
+    <circle cx="-132" cy="-125" r="14" fill="url(#goldGrad)" />
+    <circle cx="-132" cy="125" r="14" fill="url(#goldGrad)" />
+
+    <!-- Right Scroll Roller (Etz Chaim) -->
+    <rect x="124" y="-120" width="16" height="240" rx="4" fill="url(#goldGrad)" />
+    <circle cx="132" cy="-125" r="14" fill="url(#goldGrad)" />
+    <circle cx="132" cy="125" r="14" fill="url(#goldGrad)" />
+
+    <!-- Open Parchment Sheets -->
+    <!-- Left Column -->
+    <path d="M -124 -95 Q -65 -88 0 -95 L 0 95 Q -65 88 -124 95 Z" fill="url(#parchmentGrad)" stroke="#C8B89E" stroke-width="1.5" />
+    <!-- Right Column -->
+    <path d="M 0 -95 Q 65 -88 124 -95 L 124 95 Q 65 88 0 95 Z" fill="url(#parchmentGrad)" stroke="#C8B89E" stroke-width="1.5" />
+
+    <!-- Center seam shadow -->
+    <line x1="0" y1="-95" x2="0" y2="95" stroke="#B39F80" stroke-width="2" opacity="0.5" />
+
+    <!-- Script lines representation on parchment -->
+    <g fill="#7A684C" opacity="0.35">
+      <rect x="-106" y="-70" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="-55" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="-40" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="-25" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="-10" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="5" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="20" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="35" width="88" height="3" rx="1.5" />
+      <rect x="-106" y="50" width="70" height="3" rx="1.5" />
+
+      <rect x="18" y="-70" width="88" height="3" rx="1.5" />
+      <rect x="18" y="-55" width="88" height="3" rx="1.5" />
+      <rect x="18" y="-40" width="88" height="3" rx="1.5" />
+      <rect x="18" y="-25" width="88" height="3" rx="1.5" />
+      <rect x="18" y="-10" width="88" height="3" rx="1.5" />
+      <rect x="18" y="5" width="88" height="3" rx="1.5" />
+      <rect x="18" y="20" width="88" height="3" rx="1.5" />
+      <rect x="18" y="35" width="88" height="3" rx="1.5" />
+      <rect x="18" y="50" width="72" height="3" rx="1.5" />
+    </g>
+
+    <!-- Ornate Hebrew Crown (Keter Torah) above -->
+    <path d="M -45 -118 L -30 -142 L -12 -125 L 0 -148 L 12 -125 L 30 -142 L 45 -118 Z" fill="url(#goldGrad)" />
+    <circle cx="0" cy="-152" r="3.5" fill="#F5ECCE" />
+    <circle cx="-30" cy="-146" r="3" fill="#F5ECCE" />
+    <circle cx="30" cy="-146" r="3" fill="#F5ECCE" />
+  </g>
+
+  <!-- Hebrew Title Text -->
+  <text x="256" y="415" font-family="'Frank Ruhl Libre', serif" font-size="44" font-weight="bold" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="3">שנים מקרא</text>
+  <text x="256" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#E8D7B8" text-anchor="middle" letter-spacing="4" opacity="0.75">SHNAYIM MIKRA</text>
+</svg>

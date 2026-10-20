@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #FAF6EF;
+    --bg-card: #FFFFFF;
+    --border-card: #E8E1D3;
+    --text-primary: #211E1A;
+    --text-muted: #6B645A;
+    --accent-gold: #9E7422;
+    --accent-gold-soft: #F5ECCE;
+    --mikra-step-active: #9E7422;
+  }
+
+  body.theme-parchment {
+    --bg-page: #FAF6EF;
+    --bg-card: #FCFAF6;
+    --border-card: #E8E0D1;
+    --text-primary: #24201A;
+    --text-muted: #73695C;
+    --accent-gold: #9E7422;
+    --accent-gold-soft: #F6EDD0;
+    --mikra-step-active: #9E7422;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+  }
+
+  body.theme-sefer {
+    --bg-page: #F8F9FA;
+    --bg-card: #FFFFFF;
+    --border-card: #E5E7EB;
+    --text-primary: #111827;
+    --text-muted: #4B5563;
+    --accent-gold: #1E3A8A;
+    --accent-gold-soft: #DBEAFE;
+    --mikra-step-active: #1E3A8A;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+  }
+
+  body.theme-dark {
+    --bg-page: #131211;
+    --bg-card: #1C1A18;
+    --border-card: #2D2822;
+    --text-primary: #EDE7DC;
+    --text-muted: #9C9487;
+    --accent-gold: #D4AF37;
+    --accent-gold-soft: #2D2617;
+    --mikra-step-active: #D4AF37;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+  }
+}
+
+.font-frank {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.font-david {
+  font-family: 'David Libre', serif;
+}
+
+.font-noto {
+  font-family: 'Noto Serif Hebrew', serif;
+}
+
+.font-alef {
+  font-family: 'Alef', sans-serif;
+}
+
+.font-tinos {
+  font-family: 'Tinos', serif;
+}
+
+.font-assistant {
+  font-family: 'Assistant', sans-serif;
+}
+
+.font-rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+.font-heebo {
+  font-family: 'Heebo', sans-serif;
+}
+
+.font-varela {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Custom fine scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 120, 90, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 120, 90, 0.45);
+}
+
+/* Prevent Hebrew vocalization clipping */
+.hebrew-vocalized {
+  line-height: 1.85 !important;
+  font-feature-settings: "kern" 1, "dlig" 1;
+}
+
+/* Subtle parchment grain overlay */
+.bg-parchment-pattern {
+  background-image: radial-gradient(#d6cbaf 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Shnayim Mikra - שנים מקרא",
+  "description": "An elegant, distraction-free reader and study companion for Shnayim Mikra ve-Echad Targum, featuring verse-by-verse and aliyah modes, Targum Onkelos, Rashi commentary, progress tracking, and cantillation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
